@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100%;
+            height:100%
+
+        }
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header{
+            background-color: rgb(21, 248, 21);
+            color:white;
+            padding:5px;
+           
+        }
+
+        .content_box{
+            width:100%;
+            display:grid;
+            grid-template-columns: repeat(3,1fr) ;
+            gap: 25px;
+
+        }
+        .content{
+            width:100%;
+            height:auto;
+            padding:5px;
+            margin: 5px ;
+        }
+      
+        .content_box .img{
+            width:100%;
+            height:50%;
+        }
+
+        
+
+        @media screen and (max-width: 1023px) {
+            .content_box{
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .content_box{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> VTC Academy Fashion Week</h1>
+            <h3> Resize this responsive page!</h3>
+        </div>
+    
+        <div class="content_box">
+            
+            <div class="content content-1">
+                <h2> London</h2>
+                <p> London is the capital city of England</p>
+                <p>It is the most populous city in the United  Kingdom, with a metropolitan area of over 13 milions inhabitants.</p>
+                <img  class="img" src="https://bazaarvietnam.vn/wp-content/uploads/2023/09/tat-ca-thanh-vien-bts-gia-han-hop-dong-voi-bighit.jpg">
+            </div>
+
+            <div class="content content-2">
+                <h2> Seoul  </h2>
+                <p> Seoul is the capital city of Korea</p>
+                <p>It is the most populous city in the United  Kingdom, with a metropolitan area of over 13 milions inhabitants.</p>
+                <img  class="img" src="https://bazaarvietnam.vn/wp-content/uploads/2023/03/bazaarvietnam-nhung-khoanh-khac-danh-dau-chu-quyen-rm-bts-la-cua-bottega-veneta-11.jpeg">
+            </div>
+
+            <div class="content content-3">
+                <h2> HaNoi</h2>
+                <p> HaNoi is the capital city of VietNam</p>
+                <p>It is the most populous city in the United  Kingdom, with a metropolitan area of over 13 milions inhabitants.</p>
+                <img  class="img" src="https://cdn-images.vtv.vn/thumb_w/640/66349b6076cb4dee98746cf1/2024/06/16/bts-group-bts-jin-military-1-061524-1536x1152-79113412716607155466783.jpeg">
+            </div>
+       
+        </div>
+      
+
+    </div>
+
+
+    
+</body>
+</html>
